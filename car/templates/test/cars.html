@@ -1,0 +1,54 @@
+{%load staticfiles%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href={% static 'css/style.css' %}>
+    <title>Document</title>
+</head>
+<body>
+    <div id="header"> HB car showroom</div>
+    <div id="nav">
+        <tr>
+            <td> <a href="{% url 'home' %}" id="link">Home </a> </td>
+        </tr>
+        <tr>
+            <td><a href="{% url 'cars' %}" id="link"> Brand</a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'spare' %}" id="link"> Spare</a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'service' %}" id="link"> Service</a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'contact' %}" id="link"> Contact</a></td>   
+        </tr>
+    </div>
+    <div class="container">
+        <ul>
+        <li><a href="{% url 'toyota' %}"><img src="{% static 'css/toyota.jpeg' %}" alt="image" 
+            height="150px" width="180px"/>Toyota</a></li>
+        <li><a href="{% url 'hyundai' %}"><img src="{% static 'css/hyundai.jpg' %}" alt="image"
+             height="150px" width="180px"/>Hyundai</a></li>
+        <li><a href="{% url 'ford' %}"><img src="{% static 'css/Ford.png' %}" alt="image"
+            height="150px" width="180px"/>Ford</a> </li>
+        <li><a href="{% url 'nissan' %}"><img src="{% static 'css/nissan.png' %}" alt="image"
+            height="150px" width="180px"/>Nissan</a></li>
+        <li><a href="{% url 'honda' %}"><img src="{% static 'css/honda.jpg' %}" alt="image"
+            height="150px" width="180px"/>Honda</a></li>
+        <li><a href="{% url 'audi' %}"><img src="{% static 'css/audi.png' %}" alt="image"
+            height="150px" width="180px"/>Audi</a></li>
+        <li><a href="{% url 'bmw' %}"><img src="{% static 'css/bmw.jpg' %}" alt="image"
+            height="150px" width="180px"/>BMW</a></li>
+        <li><a href="{% url 'rollsroyce' %}"><img src="{% static 'css/rollsroyce.png' %}" alt="image"
+            height="150px" width="180px"/>Rolls-Royce</a></li>
+        <li><a href="{% url 'marutisuzuki' %}"><img src="{% static 'css/marutisuzuki.jpg' %}" alt="image"
+            height="150px" width="180px"/>Maruti Suzuki</a></li>
+        <li><a href="{% url 'tata' %}"><img src="{% static 'css/tata.jpg' %}" alt="image"
+            height="150px" width="180px"/>Tata</a></li>
+        </ul>
+    </div>
+</body>
+</html>

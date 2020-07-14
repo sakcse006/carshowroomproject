@@ -1,0 +1,44 @@
+{%load staticfiles%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href={% static 'css/style.css' %}>
+    <title>Document</title>
+</head>
+<body>
+    <div id="header"> HB car showroom</div>
+    <div id="nav">
+        <tr>
+            <td> <a href="{% url 'home' %}" id="link">Home </a> </td>
+        </tr>
+        <tr>
+            <td><a href="{% url 'cars' %}" id="link">  Brand</a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'spare' %}" id="link"> Spare </a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'service' %}" id="link"> Service</a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'contact' %}" id="link"> Contact</a></td>   
+        </tr>
+    </div>
+    <div class="container">
+    <ul>
+    <li><a href="{% url 'door' %}"><img src="{% static 'css/door.jpeg' %}"
+         alt="image" height="150px" width="180px"/><br>Door</a></li>
+    <li><a href="{% url 'gear' %}"><img src="{% static 'css/gear.jpg' %}"
+        alt="image" height="150px" width="180px"/><br>Gear</a></li>
+    <li><a href="{% url 'hyst' %}"><img src="{% static 'css/hyst.png' %}"
+        alt="image" height="150px" width="180px"/><br>Steering</a></li>
+    <li><a href="{% url 'msbumper' %}"><img src="{% static 'css/msbumper.png' %}"
+        alt="image" height="150px" width="180px"/><br>Bumper</a></li>
+    <li><a href="{% url 'nw' %}"><img src="{% static 'css/nw.jpg' %}"
+        alt="image" height="150px" width="180px"/><br>Wheel</a></li>
+    </ul>
+    </div>
+</body>
+</html>

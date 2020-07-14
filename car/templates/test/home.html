@@ -1,0 +1,97 @@
+{%load staticfiles%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href={% static 'css/style.css' %}>
+    <title>car</title>
+    
+</head>
+<body>
+    <div id="header"> HB car showroom</div>
+    <div id="nav">
+        <tr>
+            <td> <a href="{% url 'home' %}" id="link">Home </a> </td>
+        </tr>
+        <tr>
+            <td><a href="{% url 'cars' %}" id="link">  Brand</a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'spare' %}" id="link"> Spare </a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'service' %}" id="link"> Service</a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'contact' %}" id="link"> Contact</a></td>   
+        </tr>
+    </div>
+    <div id="container">
+       <div class="ximg1">
+        <div class="xtext">
+        <span class="border">
+        STYLE CAR
+        </span>
+        </div>
+        </div>
+        <section class="section-light">
+        <h2>section one </h2>
+        <p>
+            A car (or automobile) is a wheeled motor vehicle used for transportation. 
+            Most definitions of cars say that they run primarily on roads, seat one to 
+            eight people, have four tires, and mainly transport people rather than goods.
+            Cars came into global use during the 20th century, and developed economies 
+            depend on them. The year 1886 is regarded as the birth year of the modern car 
+            when German inventor Karl Benz patented his Benz Patent-Motorwagen.     
+        </p>
+        </section>
+        <div class="ximg2">
+        <div class="xtext">
+        <span class="border">
+            STYLES CAR
+        </span>
+        </div>
+        </div>
+        <section class="section-drak">
+        <h2>section two </h2>
+        <p>    
+            Cars have controls for driving, parking, passenger comfort, and a
+             variety of lights. Over the decades, additional features and controls 
+             have been added to vehicles, making them progressively more complex,
+              but also more reliable and easier to operate.[citation needed] 
+              These include rear-reversing cameras, air conditioning, navigation systems,
+               and in-car entertainment.There are costs and benefits to car use. The costs 
+               to the individual include acquiring the vehicle, interest payments 
+               (if the car is financed), repairs and maintenance, fuel, depreciation, 
+               driving time, parking fees, taxes, and insurance.
+        </p>
+        </section>
+        <div class="ximg3">
+        <div class="xtext">
+        <span class="border">
+            STYLES CAR
+        </span>
+        </div>
+        </div>
+        <section class="section-drak">
+        <h2>section three </h2>
+        <p>
+            The personal benefits include on-demand transportation, mobility, independence, and convenience.
+             The societal benefits include economic benefits, such as job and wealth creation 
+             from the automotive industry, transportation provision, societal well-being from
+              leisure and travel opportunities, and revenue generation from the taxes. 
+              People's ability to move flexibly from place to place has far-reaching 
+              implications for the nature of societies.
+        </p>
+        </section>
+        <div class="ximg1">
+        <div class="xtext">
+        <span class="border">
+            STYLES CAR
+        </span>
+        </div>
+        </div>   
+    </div>
+</body>
+</html>

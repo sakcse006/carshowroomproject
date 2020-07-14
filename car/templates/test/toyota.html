@@ -1,0 +1,51 @@
+{%load staticfiles%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href={% static 'css/style.css' %}>
+</head>
+<body>
+    <div id="header"> HB car showroom</div>
+    <div id="nav">
+        <tr>
+            <td> <a href="{% url 'home' %}" id="link">Home </a> </td>
+        </tr>
+        <tr>
+            <td><a href="{% url 'cars' %}" id="link">  Brand</a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'spare' %}" id="link"> Spare </a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'service' %}" id="link"> Service</a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'contact' %}" id="link"> Contact</a></td>   
+        </tr>
+    </div>
+    <div class="contain">
+            
+            <img src="{% static 'css/toyotacar.png' %}" alt="image" height="150px" width="180px"/>
+            <img src="{% static 'css/toyotacar2.jpeg' %}" alt="image" height="150px" width="180px"/>
+       
+<div>
+    <p>Toyota was the world's first automobile manufacturer to produce more than 10 million vehicles per year, which it has done since 2012,
+        when it also reported the production of its 200-millionth vehicle.Toyota is the global market leader in sales of hybrid electric vehicles,
+        and one of the largest companies to encourage the mass-market adoption of hybrid vehicles across the globe. Toyota is also a market leader
+        in hydrogen fuel-cell vehicles. Cumulative global sales of Toyota and Lexus hybrid passenger car models achieved the 15 million milestone in January 2020.</p>
+    </div>
+        <div>
+               <h3>Toyota Models</h3>
+            <li><b><i>Innova Crysta</i></b> price Rs 24.67 lakh </li>
+            <li><b><i>Glanza</i></b> price Rs 7.22 lakh</li>
+            <li><b><i>Fortuner</i></b> price Rs 33.1 Lakh</li>
+            <li><b><i>Etios Liva</i></b> price Rs 6.61 lakh</li>
+            <li><b><i>Platinum Etios</i></b> price Rs 6.89 Lakh</li>
+            <li><b><i>Yaris price</i></b> Rs 14.07 lakh</li>
+           </div>
+        </div>
+</body>
+</html>

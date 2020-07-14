@@ -1,0 +1,41 @@
+{%load staticfiles%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href={% static 'css/style.css' %}>
+    <title>Document</title>
+</head>
+<body>
+    <div id="header"> HB car showroom</div>
+    <div id="nav">
+        <tr>
+            <td> <a href="{% url 'home' %}" id="link">Home </a> </td>
+        </tr>
+        <tr>
+            <td><a href="{% url 'cars' %}" id="link">  Brand</a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'spare' %}" id="link"> Spare </a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'service' %}" id="link"> Service</a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'contact' %}" id="link"> Contact</a></td>   
+        </tr>
+    </div>
+    <div class="contain">
+            
+            <img src="{% static 'css/audicar.jpg' %}" alt="image" height="150px" width="180px"/>
+            <img src="{% static 'css/audicar2.jpeg' %}" alt="image" height="150px" width="180px"/>
+    </div>
+    <div>    <p>Bayerische Motoren Werke AG, commonly referred to as BMW is a German multinational company which produces luxury 
+         vehicles and motorcycles. The company was founded in 1916 as a manufacturer 
+         of aircraft engines, which it produced from 1917 until 1918 and again from 
+         1933 to 1945.
+    </p>
+    </div>
+</body>
+</html>

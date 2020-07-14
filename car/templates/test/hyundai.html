@@ -1,0 +1,45 @@
+{%load staticfiles%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href={% static 'css/style.css' %}>
+    <title>Document</title>
+</head>
+<body>
+    <div id="header"> HB car showroom</div>
+    <div id="nav">
+        <tr>
+            <td> <a href="{% url 'home' %}" id="link">Home </a> </td>
+        </tr>
+        <tr>
+            <td><a href="{% url 'cars' %}" id="link">  Brand</a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'spare' %}" id="link"> Spare </a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'service' %}" id="link"> Service</a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'contact' %}" id="link"> Contact</a></td>   
+        </tr>
+    </div>
+    <div class="contain">
+    <img src="{% static 'css/hyundaicar.jpg' %}" alt="image" height="150px" width="180px"/>
+    <img src="{% static 'css/hyundaicar2.jpg' %}" alt="image" height="150px" width="180px"/>
+    <p>Hyundai Motor Company was founded in 1967 and, along with its 32.8% owned subsidiary, Kia Motors, and its 100% owned luxury subsidiary Genesis Motor,
+         altogether comprise the Hyundai Motor Group.Hyundai operates the world's largest integrated automobile manufacturing facility[6] in Ulsan, South Korea 
+         which has an annual production capacity of 1.6 million units. The company employs about 75,000 people worldwide. Hyundai vehicles are sold in 193 countries 
+         through some 5,000 dealerships and showrooms.</p>
+    <div> <h3>Hyundai Models</h3>
+    <li><b><i>Elite i20</i></b> price Rs 7.37 Lakh</li>
+    <li><b><i>Venue</i></b> price Rs 9.02 Lakh</li>
+    <li><b><i>Creta</i></b> price Rs 17.2 lakh</li>
+    <li><b><i>Verna</i> </b> price Rs 11.95 Lakh</li>
+    <li><b><i>Santro</i> </b> price Rs 9.65 lakh</li>
+    </div>
+</div>
+</body>
+</html>

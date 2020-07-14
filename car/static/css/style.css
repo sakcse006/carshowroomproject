@@ -1,0 +1,174 @@
+body{
+    margin: 0 auto;
+    font-size: large;
+}
+#header{
+    background-color:  rgb(205, 205, 221);
+    color: rgb(29, 77, 158);
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 10px;
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+#nav{
+    background-color: rgb(171, 171, 214);
+    font-size: 1.5rem;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+}
+#nav a{
+    text-decoration: none;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+}
+.container{
+    background-color: white;
+    text-align: center;
+    
+}
+.container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+  }
+  
+.container li {
+    float: left;
+    height: 250px;
+    width: 250px;
+  }
+  
+.container li a {
+    display: block;
+    color: rgb(8, 7, 7);
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+  }
+
+.container li :hover {
+    color: #77136a;
+    font-size: x-large;
+    font-style: italic;
+  }
+.containers b{
+    color: rgb(36, 82, 6);
+    font-size: x-large;
+}
+.containers p{
+    color: rgb(6, 15, 10);
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;font-weight:500;font-weight:500;font-weight:500;font-weight:500;font-weight:500;font-weight:500;
+}
+.containers b:hover{
+  font-size: x-large;
+  color: red;
+ 
+}
+.containers p:hover{
+    font-size: xx-large;
+    color: rgb(17, 2, 71);
+    font-style: italic;
+  }
+.containerss ul{
+    padding-left: 30px;
+    list-style-type: none;
+    text-align: center;
+    padding: 40px;
+}
+.containerss li{
+    padding: 10px;
+}
+.contain  img{
+    padding-left: 10px;
+    padding: 20px;
+    height: 600px;
+    width: 600px;
+}
+.contain p{
+    font-size: 1.3rem;
+    text-align: justify;
+    font-style: italic;
+    color: rgb(1, 11, 14);
+}
+.contain li{
+    padding-left: 50px;
+    padding: 10px;
+    list-style-type: none;
+}
+.contain i{
+    padding: 7.5px;
+}
+.contain h3{
+    padding-left: 70px;
+}
+.cont{
+    list-style-type: none;
+    font-size: x-large;
+    padding-top: 10%;
+    text-align: center;
+}
+.ximg1{
+    background-image: url(./car1.png);
+    min-height: 500px;
+    background-size: cover;
+    color: rgb(12, 229, 245);
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: 900;
+}
+.ximg2{
+    background-image: url(./car2.png);
+    min-height: 400px;
+    width: 100%;
+    background-size: cover;
+    color: rgb(12, 229, 245);
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: 900;
+}
+.ximg3{
+    background-image: url(./car3.jpg);
+    min-height: 400px;
+    width: 100%;
+    background-size: cover;
+    color: rgb(12, 229, 245);
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: 900;
+}
+.ximg1,.ximg2,.ximg3{
+    position: relative;
+    background-position:center;
+    background-attachment: fixed;
+}
+.section-light{
+    position: relative;
+    text-align: center;
+    padding: 10px 80px;
+    background-color: rgb(172, 173, 224);
+    background-size: cover;
+
+
+}
+.section-drak{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(105, 138, 138);
+}
+.xtext{
+    position: absolute;
+    text-align: center;
+    top:50%;
+    width: 100%;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+
+}

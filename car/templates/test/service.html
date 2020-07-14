@@ -1,0 +1,43 @@
+{%load staticfiles%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href={% static 'css/style.css' %}>
+    <title>Document</title>
+</head>
+<body>
+    <div id="header"> HB car showroom</div>
+    <div id="nav">
+        <tr>
+            <td> <a href="{% url 'home' %}" id="link">Home </a> </td>
+        </tr>
+        <tr>
+            <td><a href="{% url 'cars' %}" id="link">  Brand</a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'spare' %}" id="link"> Spare </a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'service' %}" id="link"> Service</a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'contact' %}" id="link"> Contact</a></td>   
+        </tr>
+    </div>
+    <div class="containers">
+    <p><b>Free service</b> The first free service are just for mechanical checkup of car making sure the assembly of car is all well & nothing more so after servicing there are no changes in your
+         car until you change the engine oil after 10,000 kms or 6 month in 2nd free service.</p>
+    <p><b>Basic service</b> Service will typically include an oil and filter change and a visual inspection, but there will usually be a top-up of all the key fluids in the engine (washer fluid, brake fluid, antifreeze and steering fluid) and a 
+        check of up to 35 key components to ensure your car is in the best condition possible.</p>
+    <p><b>Full service</b> 
+        An engine oil change and/or filter replacement.Checking lights, tyres, exhaust and operations of brakes and steering Ensuring your engine is 'tuned' to run in its peak condition.Checking hydraulic 
+        fluid and coolant levels.Checking the cooling system (from radiators in your car to pumps and hoses) Suspension checks.</p>
+        <p><b>12000 miles</b> As a good rule of thumb, we suggest you have your car serviced every twelve months or 12000 miles, whichever comes first. Heavy car users, who drive many miles a year, 
+        should aim to have at least an interim service every six months or 6000 miles.</p>
+        <p><b>Water Service</b> Traditionally, when you clean a car with a water and sponge, and you're scrubbing the car to get the dirt loose, first of all you're scratching the paint of the car." ... Not only does 
+            this take less water, but it makes your car cleaner and keeps the paint looking fresh longer.</p>
+        </div>
+        </body>
+</html>

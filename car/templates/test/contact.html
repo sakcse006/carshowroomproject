@@ -1,0 +1,50 @@
+{%load staticfiles%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href={% static 'css/style.css' %}>
+    <title>Document</title>
+</head>
+<body>
+    <div id="header"> HB car showroom</div>
+    <div id="nav">
+        <tr>
+            <td> <a href="{% url 'home' %}" id="link">Home </a> </td>
+        </tr>
+        <tr>
+            <td><a href="{% url 'cars' %}" id="link">  Brand</a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'spare' %}" id="link"> Spare </a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'service' %}" id="link"> Service</a></td>   
+        </tr>
+        <tr>
+            <td><a href="{% url 'contact' %}" id="link"> Contact</a></td>   
+        </tr>
+    </div>
+    <div class="containerss">
+    <ul>
+    <li>
+        <img src="{% static 'css/call.png' %}"
+        alt="image" height="50px" width="80px"/><br>8896483653
+    </li>
+    <li>
+        <img src="{% static 'css/whatsapp.jpg' %}"
+        alt="image" height="50px" width="80px"/><br>9879867866
+    </li>
+    <li>
+        <img src="{% static 'css/email.png' %}"
+        alt="image" height="50px" width="80px"/><br>carshow@hb.co.in
+    </li>
+    <li>
+        <img src="{% static 'css/fb.png' %}"
+        alt="image" height="50px" width="80px"/><br>hb.fb.com
+    </li>
+</ul>
+</div>
+</body>
+</html>
